@@ -1,0 +1,269 @@
+*{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    border:border-box;
+}
+.header{
+    background-image: url(header-image.png);
+    height:95vh;
+    width:84%;
+    background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url(header-image.png);
+    background-repeat: none;
+    background-size: cover;
+    padding:10px 8%;
+    background-position: center;
+    position: relative;
+}
+.logo{
+    height:37px;
+    width:127px;
+    margin-top: 30px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 0px;
+}
+nav button{
+    border:0;
+    outline:0;
+    background: #db0001;
+    color:#fff;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor:pointer;
+    padding:7px 20px;
+    margin-left: 10px;
+}
+.lng-btn{
+    display:inline;
+    background-color: rgb(0,0,0,0.7);
+    background: transparent;
+    border: 0.5px solid white;
+    padding:8px 10px;
+}
+
+h1{
+    color:white;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+    
+}
+h3{
+    color:white;
+    font-size:1.5rem ;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+   
+}
+ p{
+    color:white;
+    font-size:1.2rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+
+}
+.header-inf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px 30px;
+    text-align: center;
+
+}
+input[type=text]{
+    height:50px;
+    width:400px;
+    padding:0px 1px;
+    padding-left:20px;
+    margin-left: 10px;
+    background: transparent;
+    justify-content: center;
+    border:1px solid rgb(160, 158, 158);
+    border-radius: 5px;
+    color:white;
+    
+}
+input[type=button]{
+    height:56px;
+    width:200px;
+    padding-right: 70px;
+    margin-left: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #db0001;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
+
+}
+.content{
+    height:8px;
+    width:100%;
+    background-color:rgb(160, 158, 158) ;
+}
+.box-cont{
+    height:500px;
+    width:100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:75px 0px 75px;
+    
+    
+    
+    
+}
+.box-inf{
+    padding-bottom: 150px;
+    flex-basis: 35%;
+    
+    
+}
+.img-col{
+    flex-basis:50%;
+}
+.cont-sec{
+    height:8px;
+    width:100%;
+    background-color:rgb(160, 158, 158) ;
+}
+
+.feature-sec{
+    height:500px;
+    width:100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction:row-reverse;
+    
+   
+    
+
+}
+.fea-inf{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-basis:35%;
+    margin-bottom: 80px;
+    
+}
+.img1-col{
+    flex-basis: 50%;
+    margin-top:20px;
+    
+    
+
+}
+.img-col img{
+    display:block;
+    width:70%;
+    margin:auto;
+}
+.img1-col img{
+    display:block;
+    width:70%;
+    margin:auto;
+}
+.ques{
+    height:1200px;
+    width:100%;
+    background-color: black;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+}
+
+
+
+.accordion{
+    margin:60px auto;
+    width:100%;
+    max-width: 750px;
+
+}
+.accordion li{
+    list-style: none;
+    width:100%;
+    padding:7px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom:2px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor:pointer;
+    position:relative;
+    background: #303030;
+
+}
+label::after{
+    content:'+';
+    position: absolute;
+    font-size: 34px;
+    right:20px;
+}
+input[type="radio"]{
+    display:none;
+
+}
+.ans{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .ans {
+   
+  
+    max-height:600px;
+    padding:30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+
+
+}
+
+
+
+
+
+
+
+
